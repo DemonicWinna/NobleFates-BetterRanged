@@ -1,0 +1,48 @@
+	{
+        id Oct.Character.SecondaryRanged
+        type SecondaryWeaponCharacterRangedAttackType
+        animation = Armature|AimBow
+        sound = BowFired
+        speed = 120
+        fireAfter = .1
+        completeAfter = .2
+        attackRateMultiplier = 5
+    }
+//ShortBows
+{
+	id Oct.Items.Weapons.ShortBow
+	type WeaponItemType
+	buffScale = 4
+    stats =
+    [
+        ?(name == Damage) {
+            type InstancedItemStat
+            min = 13
+            max = 30
+        }
+        ?(name == Value) {
+            type InstancedItemStat
+            min = 13
+            max = 48
+        }
+    ]
+}
+// Fine Short Bow
+{
+    id Oct.Items.Weapons.ShortBow.Fine
+    type WeaponItemType
+	stats =
+    [
+        ?(name == Damage) {
+            type InstancedItemStat
+            min = 20
+            max = 38
+        }
+        ?(name == Value) {
+            type InstancedItemStat
+            min = 40
+            max = 256
+        }
+    ]
+}
+//
